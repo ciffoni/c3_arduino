@@ -1,0 +1,10 @@
+C:\Users\pcbr4\OneDrive\Favoritos\Documentos\GitHub\c3_arduino\serial\serial\bin\Debug\serial.exe.config
+C:\Users\pcbr4\OneDrive\Favoritos\Documentos\GitHub\c3_arduino\serial\serial\bin\Debug\serial.exe
+C:\Users\pcbr4\OneDrive\Favoritos\Documentos\GitHub\c3_arduino\serial\serial\bin\Debug\serial.pdb
+C:\Users\pcbr4\OneDrive\Favoritos\Documentos\GitHub\c3_arduino\serial\serial\obj\Debug\serial.csproj.AssemblyReference.cache
+C:\Users\pcbr4\OneDrive\Favoritos\Documentos\GitHub\c3_arduino\serial\serial\obj\Debug\serial.Form1.resources
+C:\Users\pcbr4\OneDrive\Favoritos\Documentos\GitHub\c3_arduino\serial\serial\obj\Debug\serial.Properties.Resources.resources
+C:\Users\pcbr4\OneDrive\Favoritos\Documentos\GitHub\c3_arduino\serial\serial\obj\Debug\serial.csproj.GenerateResource.cache
+C:\Users\pcbr4\OneDrive\Favoritos\Documentos\GitHub\c3_arduino\serial\serial\obj\Debug\serial.csproj.CoreCompileInputs.cache
+C:\Users\pcbr4\OneDrive\Favoritos\Documentos\GitHub\c3_arduino\serial\serial\obj\Debug\serial.exe
+C:\Users\pcbr4\OneDrive\Favoritos\Documentos\GitHub\c3_arduino\serial\serial\obj\Debug\serial.pdb

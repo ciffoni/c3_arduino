@@ -1,4 +1,5 @@
-﻿namespace comunicacao_arduino
+﻿using System.IO.Ports;
+namespace comunicacao_arduino
 {
     partial class Form1
     {
@@ -28,11 +29,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             btnConectar = new Button();
             btnEnviar = new Button();
             comboBox1 = new ComboBox();
             txtEnviar = new TextBox();
-            textBox2 = new TextBox();
+            txtReceber = new TextBox();
+            timerCom = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // btnConectar
@@ -58,29 +61,34 @@
             comboBox1.FormattingEnabled = true;
             comboBox1.Location = new Point(145, 14);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
+            comboBox1.Size = new Size(233, 28);
             comboBox1.TabIndex = 2;
             // 
             // txtEnviar
             // 
-            txtEnviar.Location = new Point(177, 61);
+            txtEnviar.Location = new Point(145, 61);
             txtEnviar.Name = "txtEnviar";
-            txtEnviar.Size = new Size(125, 27);
+            txtEnviar.Size = new Size(233, 27);
             txtEnviar.TabIndex = 3;
             // 
-            // textBox2
+            // txtReceber
             // 
-            textBox2.Location = new Point(43, 112);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 4;
+            txtReceber.Location = new Point(43, 112);
+            txtReceber.Multiline = true;
+            txtReceber.Name = "txtReceber";
+            txtReceber.Size = new Size(335, 197);
+            txtReceber.TabIndex = 4;
+            // 
+            // timerCom
+            // 
+            timerCom.Interval = 1000;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(textBox2);
+            ClientSize = new Size(471, 450);
+            Controls.Add(txtReceber);
             Controls.Add(txtEnviar);
             Controls.Add(comboBox1);
             Controls.Add(btnEnviar);
@@ -97,6 +105,7 @@
         private Button btnEnviar;
         private ComboBox comboBox1;
         private TextBox txtEnviar;
-        private TextBox textBox2;
+        private TextBox txtReceber;
+        private System.Windows.Forms.Timer timerCom;
     }
 }
