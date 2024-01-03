@@ -13,6 +13,7 @@ namespace serial
 {
     public partial class Form1 : Form
     {
+        string RxString;
         public Form1()
         {
             InitializeComponent();
@@ -113,6 +114,17 @@ namespace serial
         {
             if (serialPort1.IsOpen == true)          //porta está aberta
                 serialPort1.Write(txtEnviar.Text);  //envia o texto presente no textbox Enviar
+        }
+
+        private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+            RxString = serialPort1.ReadExisting();
+            this.Invoke(new EventHandler(tratadadosrecebidos));
+        }
+        private void tratadadosrecebidos(object sender,EventArgs e)
+        {
+            txtRecebido.AppendText(RxString);
+
         }
     }
 }

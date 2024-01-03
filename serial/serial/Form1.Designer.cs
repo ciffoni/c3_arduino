@@ -32,11 +32,15 @@
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.timerCom = new System.Windows.Forms.Timer(this.components);
             this.txtEnviar = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtRecebido = new System.Windows.Forms.TextBox();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.btnConectar = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
+            // 
+            // serialPort1
+            // 
+            this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort1_DataReceived);
             // 
             // timerCom
             // 
@@ -50,13 +54,13 @@
             this.txtEnviar.Size = new System.Drawing.Size(121, 22);
             this.txtEnviar.TabIndex = 0;
             // 
-            // textBox2
+            // txtRecebido
             // 
-            this.textBox2.Location = new System.Drawing.Point(28, 103);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(329, 180);
-            this.textBox2.TabIndex = 1;
+            this.txtRecebido.Location = new System.Drawing.Point(28, 103);
+            this.txtRecebido.Multiline = true;
+            this.txtRecebido.Name = "txtRecebido";
+            this.txtRecebido.Size = new System.Drawing.Size(329, 180);
+            this.txtRecebido.TabIndex = 1;
             // 
             // btnEnviar
             // 
@@ -94,7 +98,7 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnConectar);
             this.Controls.Add(this.btnEnviar);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtRecebido);
             this.Controls.Add(this.txtEnviar);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -109,7 +113,7 @@
         private System.IO.Ports.SerialPort serialPort1;
         private System.Windows.Forms.Timer timerCom;
         private System.Windows.Forms.TextBox txtEnviar;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtRecebido;
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.Button btnConectar;
         private System.Windows.Forms.ComboBox comboBox1;
